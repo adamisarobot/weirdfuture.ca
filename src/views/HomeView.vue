@@ -7,23 +7,23 @@
     <section class="flex flex-wrap p-[1vmin] font-comic">
       <HomePanel>
         <HomePanelText :top="true"> Suddenly... </HomePanelText>
-        <HomePanelText :bottom="true">...something amazing happened</HomePanelText>
+        <HomePanelText :bottom="true">...something happened</HomePanelText>
       </HomePanel>
       <HomePanel>
-        <p class="text top-left">Try resizing...</p>
-        <p class="text bottom-right">...it's responsive</p>
+        <HomePanelText :top="true">Try resizing...</HomePanelText>
+        <HomePanelText :bottom="true">...it's responsive</HomePanelText>
       </HomePanel>
-      <div class="panel">
+      <HomePanel>
         <p class="speech">A speech bubble</p>
-      </div>
-      <div class="panel"></div>
-      <div class="panel"></div>
-      <div class="panel"></div>
-      <div class="panel"></div>
-      <div class="panel"></div>
-      <div class="panel">
-        <p class="text bottom-right">THE END</p>
-      </div>
+      </HomePanel>
+      <HomePanel></HomePanel>
+      <HomePanel></HomePanel>
+      <HomePanel></HomePanel>
+      <HomePanel></HomePanel>
+      <HomePanel></HomePanel>
+      <HomePanel>
+        <HomePanelText :bottom="true">THE END</HomePanelText>
+      </HomePanel>
     </section>
   </main>
 </template>
