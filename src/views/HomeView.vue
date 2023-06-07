@@ -1,25 +1,25 @@
 <template>
   <header>
-    <div class="super-header">Astonishing Tales from the Astral Sea</div>
-    <h1>Weird Future</h1>
+    <div class="text-center font-tall-deco text-5xl">Astonishing Tales from the Astral Sea</div>
+    <h1 class="">Weird Future</h1>
   </header>
   <main>
     <section class="flex flex-wrap p-[1vmin] font-comic">
-      <HomePanel>
-        <HomePanelText :top="true"> Suddenly... </HomePanelText>
-        <HomePanelText :bottom="true">...something happened</HomePanelText>
+      <HomePanel color="blue">
+        <HomePanelText top> Suddenly... </HomePanelText>
+        <HomePanelText bottom>...something happened</HomePanelText>
       </HomePanel>
-      <HomePanel>
-        <HomePanelText :top="true">Try resizing...</HomePanelText>
-        <HomePanelText :bottom="true">...it's responsive</HomePanelText>
+      <HomePanel color="red">
+        <HomePanelText top>Try resizing...</HomePanelText>
+        <HomePanelText bottom>...it's responsive</HomePanelText>
       </HomePanel>
-      <HomePanel>
-        <p class="speech">A speech bubble</p>
+      <HomePanel color="green">
+        <HomeSpeechBubble>A speech bubble</HomeSpeechBubble>
       </HomePanel>
-      <HomePanel></HomePanel>
-      <HomePanel></HomePanel>
-      <HomePanel></HomePanel>
-      <HomePanel></HomePanel>
+      <HomePanel color="yellow"></HomePanel>
+      <HomePanel color="purple"></HomePanel>
+      <HomePanel color="pink"></HomePanel>
+      <HomePanel color="gray"></HomePanel>
       <HomePanel></HomePanel>
       <HomePanel>
         <HomePanelText :bottom="true">THE END</HomePanelText>
@@ -31,4 +31,5 @@
 <script setup lang="ts">
 import HomePanel from '@/components/HomePanel.vue';
 import HomePanelText from '@/components/HomePanelText.vue';
+import HomeSpeechBubble from '@/components/HomeSpeechBubble.vue';
 </script>
