@@ -3,3 +3,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'TallDeco';
+  src: url('./fonts/talldeco.woff2') format('woff2'), url('./fonts/talldeco.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
