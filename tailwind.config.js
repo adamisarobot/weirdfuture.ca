@@ -10,7 +10,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        comic: ['Comic Sans MS', 'Comic Sans', 'cursive']
+        comic: ['Comic Sans MS', 'Comic Sans', 'cursive'],
+        'tall-deco': ['TallDeco', 'sans-serif']
       },
       boxShadow: {
         panel: '0 6px 6px -6px #000'
