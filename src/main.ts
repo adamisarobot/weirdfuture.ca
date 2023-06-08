@@ -1,6 +1,6 @@
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';
-import { createHead } from 'unhead';
+import { createHead } from '@unhead/vue';
 
 import { plugin, defaultConfig } from '@formkit/vue';
 import { generateClasses } from '@formkit/themes';
@@ -16,6 +16,7 @@ import './assets/main.css';
 const head = createHead();
 const app = createApp(App);
 
+app.use(head);
 app.use(createPinia());
 app.use(router);
 app.use(
