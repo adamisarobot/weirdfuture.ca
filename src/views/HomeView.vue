@@ -32,4 +32,9 @@
 import HomePanel from '@/components/HomePanel.vue';
 import HomePanelText from '@/components/HomePanelText.vue';
 import HomeSpeechBubble from '@/components/HomeSpeechBubble.vue';
+import { useHead } from 'unhead';
+
+useHead({
+  title: 'Weird Future | Astonishing Tales from the Astral Sea'
+});
 </script>
